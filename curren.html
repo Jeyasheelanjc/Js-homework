@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+
+    .gap {
+        margin-top: 20px;
+    }
+
+    .gap1 {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    button {
+        padding: 10px;
+    }
+
+    .currencyConverter {
+        border: 2px solid black;
+        padding: 20px 20px 45px 20px;
+    }
+</style>
+
+<body>
+    <main>
+        <div class="currencyConverter">
+            <h1 class="gap">Currency Coverter</h1>
+            <div class="gap">
+                <label for="">Enter the Amount:</label>
+                <input type="text" id="input" placeholder="₹0">
+            </div>
+            <div class="gap">
+                <label for="">Select the Country:</label>
+                <select name="" id="country">
+                    <option value="thai">Thai Baht</option>
+                    <option value="aud">Aud Dollar</option>
+                    <option value="eur">Euro</option>
+                    <option value="yen">Jpn Yen</option>
+                    <option value="mxn">Mexican</option>
+                    <option value="nz">Nz Dollar</option>
+                    <option value="sgd">Singapore</option>
+                    <option value="sri">Srilanka</option>
+                </select>
+            </div>
+            <div class="gap1">
+                <button onclick="convert()">Convert</button>
+            </div>
+            <div class="gap">
+                <label for="">Coversion:</label>
+                <input type="text" id="result">
+            </div>
+        </div>
+    </main>
+    <script src="curren.js"></script>
+</body>
+
+</html>
